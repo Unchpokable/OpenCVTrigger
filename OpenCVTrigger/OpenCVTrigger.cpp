@@ -15,8 +15,6 @@ void OnScannerEvent(Scanner* sender, ScanEvent* e_args)
 
 int main(int argc, char** argv)
 {
-    std::cout << "Hello World!\n";
-
     auto conf = utrigger_config::ReadCmdArgs(argc, argv, '=');
 
     g_config = new utrigger_config::Config(*conf);
